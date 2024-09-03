@@ -3,10 +3,67 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>index</title>
-  <link href="style.css" rel="stylesheet" />
+  <title>Chat</title>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(248, 248, 248);
+            font-family: 'Gotham', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .main-text {
+            font-size: 48px;
+            font-weight: bold;
+            color: rgb(22 48 90);
+            color: black; /* Adjust as needed */
+        }
+
+        .sub-text {
+            font-size: 24px;
+             color: color: rgb(22 48 90);
+            margin-top: 10px;
+        }
+
+        .arrow {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            color: rgb(22 48 90);
+            border: solid 3px black;
+            border-width: 3px 3px 0 0;
+            transform: rotate(65deg); /* Adjust rotation to 65 degrees */
+            animation: drawArrow 4s infinite;
+        }
+
+        @keyframes drawArrow {
+            0% {
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(65deg); /* Adjust rotation to 65 degrees */
+            }
+            100% {
+                top: 80%;
+                left: 80%;
+                transform: translate(-50%, -50%) rotate(65deg); /* Adjust rotation to 65 degrees */
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="main-text">Chat with us</div>
+    <h2 class="sub-text">We are here to help you! Click below to start a chat with one of our agents.</h2>
+    <div class="arrow"></div>
 
 </body>
 
